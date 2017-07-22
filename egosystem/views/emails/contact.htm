@@ -1,0 +1,17 @@
+<ul>
+    <li>CONTACT: {{first_name}} <strong>{{last_name}}</strong></li>
+    <li>EMAIL: <a href="mailto:{{email}}">{{email}}</a></li>
+</ul>
+<p>
+	<strong>SUJET: </strong>{{lead_source}}
+	<br>
+	<strong>MESSAGE: </strong>
+	<p>{{lead_description}}</p>
+</p>
+<hr>
+<p>
+EGOSystem -  Voir le prospects: <a href="{{lead_url}}">{{lead_url}}</a>
+<p>
+<small>Ceci est un email automatique / This is an automatic message<br></small>
+<small>email envoyé:{{ "now"|date("d/m/Y") }}</small>
+

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Setting
+
+# Model Form Field configuration
+form: $/code8/egosystem/models/setting/fields.yaml
+
+# Model Class name
+modelClass: Code8\EgoSystem\Models\Setting
+
+# Default redirect location
+defaultRedirect: code8/egosystem/settings
+
+# Create page
+create:
+    title: Create Setting
+    redirect: code8/egosystem/settings/update/:id
+    redirectClose: code8/egosystem/settings
+
+# Update page
+update:
+    title: Edit Setting
+    redirect: code8/egosystem/settings
+    redirectClose: code8/egosystem/settings
+
+# Preview page
+preview:
+    title: Preview Setting

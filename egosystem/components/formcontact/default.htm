@@ -1,0 +1,35 @@
+<form id="main-contact-form" role="form" name="contact-form" data-request="{{ __SELF__ }}::onSend" data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
+	<div class="row">
+		<div class="col-sm-4"><label for="first_name">Prénom</label></div>
+		<div class="col-sm-8"><input type="text" name="first_name" id="first_name" tabindex=1/></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><label for="last_name">Nom</label></div>
+		<div class="col-sm-8"><input type="text" name="last_name" id="last_name" tabindex=2/></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4"><label for="email">Email</label></div>
+		<div class="col-sm-8"><input type="text" name="email" id="email" required tabindex=3/></div>
+	</div>
+	<div class="field">
+	<label for="lead_source">Sujet</label>
+	<select name="lead_source" id="lead_source" tabindex=4>
+		<option value="questionformation">Questions relatives aux cours / formation</option>
+		<option value="questioncomptable">Questions relatives aux factures</option>
+		<option value="questionshow">Évèntment / Animation</option>
+		<option value="questiondivers">Autres</option>
+	</select>
+	</div>
+	<div class="field">
+		<label for="lead_description">Message</label>
+		<textarea name="lead_description" id="lead_description" rows="6" tabindex=4></textarea>
+	</div>
+	<ul class="actions">
+		<li>
+			<div class="confirm-container">
+				<button type="submit" class="special" tabindex=5 /><span class="icon  fa-envelope"></span> Envoyer</button>
+				<!--This will contain the confirmation when the email is successfully sent-->
+			</div>
+		</li>
+	</ul>
+</form> <!-- code8 plugin for suitecrm octobercms -->
